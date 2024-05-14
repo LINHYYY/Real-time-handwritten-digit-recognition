@@ -19,7 +19,8 @@ The program includes VGG16net training code, users can modify the training code 
 Use pip to install dependencies: `pip install -r requirements.txt`
 
 ### operation
-Run `python main.py` in the root of the project to run the program.
+- 1. Run `python train.py` in the root directory of the project to train the model file by yourself
+- 2. Run `python main.py` to run the program
 
 -----
 
