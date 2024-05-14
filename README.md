@@ -19,8 +19,9 @@ Real-time handwritten digit recognition 是一个使用VGG16net训练模型文�
 请使用 pip 安装依赖：`pip install -r requirements.txt`
 
 ### 运行
-1、在项目根目录下运行 `python train.py` 自行训练模型文件 
-2、运行 `python main.py` 即可运行程序
+
+- 1、在项目根目录下运行 `python train.py` 自行训练模型文件 
+- 2、运行 `python main.py` 即可运行程序
 
 -----
 
