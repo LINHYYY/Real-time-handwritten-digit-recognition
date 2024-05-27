@@ -11,7 +11,8 @@ The program includes VGG16net training code, users can modify the training code 
 ## effect
 ![](resources/726.png)
 ![](resources/909.png)
-
+![](resources/632.png)
+![](resources/641.png)
 -----
 
 ## Mode of use

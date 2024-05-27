@@ -5,7 +5,7 @@ from torchvision import transforms
 import torch.nn as nn
 import torch.nn.functional as F
 
-from VGG import VGG16,VGGBlock
+from VGGNet import VGG16,VGGBlock
 
 def pre():
   # 创建一个VGG16对象

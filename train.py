@@ -11,7 +11,8 @@ import numpy as np # linear algebra
 import pandas as pd
 
 import time
-from VGG import VGG16,VGGBlock
+from VGGNet import VGG16,VGGBlock
+# from ResNet import *
 
 # pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 # conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
@@ -88,6 +89,7 @@ def train(loaders, optimizer, criterion, epochs=10, save_param=True, dataset="mn
         print("Interrupted")
     
     finally: # 绘制图表
+        plt.show()
         plt.title("Loss")
         for split in ["train", "test"]:
             plt.plot(history_loss[split], label=split)
@@ -104,7 +106,9 @@ def train(loaders, optimizer, criterion, epochs=10, save_param=True, dataset="mn
 
 # main
 model = VGG16((1,32,32), batch_norm=True)
-optimizer = optim.SGD(model.parameters(), lr=0.001) # 随机梯度下降（SGD）
+# optimizer = optim.SGD(model.parameters(), lr=0.001) # 随机梯度下降（SGD）
+params = [p for p in model.parameters() if p.requires_grad]
+optimizer = torch.optim.Adam(params, lr=0.001, weight_decay=5E-5)
 criterion = nn.CrossEntropyLoss() # 交叉熵损失函数
 
 
@@ -146,4 +150,4 @@ loaders = {"train": train_loader,
            "test": test_loader}
 
 
-train(loaders, optimizer, criterion, epochs=10)  
+train(loaders, optimizer, criterion, epochs=15)  

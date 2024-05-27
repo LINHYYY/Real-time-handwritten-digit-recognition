@@ -4,3 +4,5 @@ numpy
 pandas
 PyQt5
 pyqt5-tools
+tensorboard
+utils

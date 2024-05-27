@@ -11,7 +11,8 @@ Real-time handwritten digit recognition 是一个使用VGG16net训练模型文�
 ## 效果
 ![](resources/726.png)
 ![](resources/909.png)
-
+![](resources/632.png)
+![](resources/641.png)
 -----
 
 ## 使用方式
