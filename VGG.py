@@ -1,3 +1,4 @@
+# 请将文件名改为 VGGNet.py \Change the file name to VGGNet.py 
 import torch.nn as nn
 import torch.nn.functional as F
 
