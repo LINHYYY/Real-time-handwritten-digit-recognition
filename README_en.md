@@ -24,7 +24,7 @@ Use pip to install dependencies: `pip install -r requirements.txt`
 - 2. Run `python main.py` to run the program
 
 ### demo
-![](resources/654.mp4)
+![](resources/073.gif)
 
 -----
 
