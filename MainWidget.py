@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QHBoxLayout, QVBoxLayout, QPushButton, QSplitter,\
     QComboBox, QLabel, QSpinBox, QFileDialog, QMessageBox
 from PaintBoard import PaintBoard
 from predicted import pre
+import random
 
 class MainWidget(QWidget):
 
@@ -59,7 +60,8 @@ class MainWidget(QWidget):
         image.save(savePath)
         # predicted
         res = pre()
-        QMessageBox.information(self, "信息", "我想它应该是"+res)
+        assge = ['我想它应该是','它或许可能是', '真相只有一个！他就是']
+        QMessageBox.information(self, "信息", assge[random.randint(0, 2)]+res)
 
 
         

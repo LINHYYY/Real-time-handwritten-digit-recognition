@@ -23,6 +23,9 @@ Use pip to install dependencies: `pip install -r requirements.txt`
 - 1. Run `python train.py` in the root directory of the project to train the model file by yourself
 - 2. Run `python main.py` to run the program
 
+### demo
+![](resources/654.mp4)
+
 -----
 
 ## Project structure

@@ -11,7 +11,7 @@ import numpy as np # linear algebra
 import pandas as pd
 
 import time
-from VGGNet import VGG16,VGGBlock
+from VGG import VGG16,VGGBlock
 # from ResNet import *
 
 # pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
@@ -150,4 +150,4 @@ loaders = {"train": train_loader,
            "test": test_loader}
 
 
-train(loaders, optimizer, criterion, epochs=15)  
+train(loaders, optimizer, criterion, epochs=10)  
