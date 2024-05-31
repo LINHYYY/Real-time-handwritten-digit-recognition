@@ -25,7 +25,10 @@ Real-time handwritten digit recognition 是一个使用VGG16net训练模型文�
 - 2、运行 `python main.py` 即可运行程序
 
 ### demo
-![](resources/654.mp4)
+
+![demo](resources/073.gif)
+
+
 
 -----
 
