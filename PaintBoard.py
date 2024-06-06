@@ -14,7 +14,7 @@ class PaintBoard(QWidget):
         self.__size = QSize(480,460)
 
         self.__board = QPixmap(self.__size)
-        self.__board.fill(QColor(138,43,226)) #用紫色填充画板，与数据集保持一致
+        self.__board.fill(QColor(68,1,84)) #用紫色填充画板，与数据集保持一致rgb(68,1,84)
         
         self.__IsEmpty = True
         self.EraserMode = False
@@ -23,7 +23,7 @@ class PaintBoard(QWidget):
         
         self.__painter = QPainter()
         self.__thickness = 30  #画笔粗细
-        self.__penColor = QColor("yellow")  #设置画笔颜色
+        self.__penColor = QColor(QColor(246,230,31))  #设置画笔颜色rgb(246,230,31)
 
      
     def __InitView(self):
@@ -31,7 +31,7 @@ class PaintBoard(QWidget):
         
     def Clear(self):
         #清空画板
-        self.__board.fill(QColor(138,43,226))
+        self.__board.fill(QColor(68,1,84)) # rgb(68,1,84)
         self.update()
         self.__IsEmpty = True
         
